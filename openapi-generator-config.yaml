@@ -1,0 +1,77 @@
+# OpenAPI Generator Configuration for Go SDK
+# This file configures how the Go client SDK is generated
+
+# Generator type
+generatorName: go
+
+# Input/Output paths (overridden by CLI but documented here)
+# inputSpec: openapi/spec.yaml
+# outputDir: .
+
+# Git repository configuration
+gitRepoId: arcane-go
+gitUserId: anujc4
+
+# Package configuration
+packageName: arcane
+
+# Additional properties for Go generator
+additionalProperties:
+  # Package version (will be overridden by API version from spec)
+  packageVersion: 1.11.2
+
+  # Module path for the generated code
+  goModulePath: github.com/anujc4/arcane-go
+
+  # Whether this is a Go submodule
+  isGoSubmodule: false
+
+  # Prefix enums with class name
+  enumClassPrefix: true
+
+  # Prefix struct fields
+  structPrefix: true
+
+  # Use oneOf interface
+  useOneOfDiscriminatorLookup: true
+
+  # Include validation tags
+  withGoCodegenComment: true
+
+  # Enable XML support
+  withXml: false
+
+  # Generate only models and APIs (not full client)
+  generateInterfaces: false
+
+  # Disable deprecated endpoints
+  disallowAdditionalPropertiesIfNotPresent: false
+
+# Global properties
+globalProperties:
+  # Skip certain files from generation
+  models: ""
+  apis: ""
+  supportingFiles: ""
+
+# Template directory (if custom templates are used)
+# templateDir: ./templates
+
+# Type mappings (customize Go type mappings)
+typeMappings:
+  DateTime: time.Time
+  Date: time.Time
+
+# Import mappings
+importMappings:
+  time.Time: time
+
+# Reserved word mappings
+reservedWordsMappings:
+  type: type_
+  func: func_
+  interface: interface_
+
+# Server variables
+serverVariables:
+  baseUrl: https://arcane.privaterelay.xyz/api
