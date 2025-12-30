@@ -74,4 +74,4 @@ reservedWordsMappings:
 
 # Server variables
 serverVariables:
-  baseUrl: https://arcane.privaterelay.xyz/api
+  baseUrl: https://arcane.example.com/api

@@ -1,42 +1,27 @@
-# Test binary, built with `go test -c`
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj
+_test
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+*.exe
 *.test
+*.prof
 
-# Output of the go coverage tool
-*.out
-
-# Dependency directories
-vendor/
-
-# Go workspace file
-go.work
-
-# IDE and editor files
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# OpenAPI Generator files
-openapi-generator-cli.jar
-.openapi-generator/
-.openapi-generator-ignore
-
-# Build artifacts
-dist/
-build/
-bin/
-
-# Temporary files
-tmp/
-temp/
-*.tmp
-
-# Log files
-*.log
-
-# Environment files
-.env
-.env.local
-.env.*.local
+.tool-versions
+.vscode
